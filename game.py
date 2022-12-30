@@ -17,10 +17,10 @@ class TicTacToe:
             print('|' + '|'.join(row)+'|')
 
     def avaliable_mpves(self):
-        #return [i for i, spot in enumerate(self.board) if spot ==' ']
-        moves =[]
-        for (i,spot) in enumerate(self.board):
-            #['x','x','o']----->[(0,'x'),(1,'x')]
-            if spot == ' ':
-                moves.append(i)
-            return moves
+        return [i for i, spot in enumerate(self.board) if spot ==' ']
+        #moves =[]
+        #for (i,spot) in enumerate(self.board):
+        #    #['x','x','o']----->[(0,'x'),(1,'x')]
+        #    if spot == ' ':
+        #        moves.append(i)
+        #    return moves
